@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #E9DBB7;
+    font-family: 'Montserrat', sans-serif;
 
     a {
         color: inherit;

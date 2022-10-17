@@ -11,13 +11,12 @@ The internet home for Caitlin Trussell. React SSR via NextJS
 
 - 🏃‍♀️ NextJS
 - 💅 Styled Components
-- 🦺 Typescript, Eslint, Prettier, Husky
+- 🦺 Typescript, Eslint, Prettier
 
 ## 💾 Installation
 
 1. Git clone this repo to your machine
 2. cd `caitlintrussell.com-next` and run `yarn`
-3. run `yarn install husky`
 
 ## 🛠 Run / Build
 
