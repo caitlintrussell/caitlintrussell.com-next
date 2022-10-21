@@ -12,6 +12,8 @@ const Container = styled.div`
 `
 
 const LogoArea = styled.div`
+  display: flex;
+  flex-direction: column;
   min-height: 345px;
   min-width: 500px;
   border-color: #46789e;
@@ -22,11 +24,12 @@ const LogoArea = styled.div`
 `
 
 const Bottom = styled.div`
+  flex: 1;
   display: flex;
-  height: 90%;
-  width: 100%;
-  justify-content: center;
-  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 1rem;
   & > h2 {
     color: #46789e;
     padding: 0;
@@ -39,17 +42,12 @@ const Fiori = styled.div`
   width: calc(100% + 210px);
   align-items: space-between;
   justify-content: space-between;
-  margin-top: 40px
-`
-
-const FioreLeft = styled.div`
   position: relative;
   left: -105px;
+  top: 40px;
 `
 
 const FioreRight = styled.div`
-  position: relative;
-  right: 105px;
   & img {
     transform: scaleX(-1);
   }
@@ -59,9 +57,9 @@ const HomePage = () => (
   <Container>
     <LogoArea>
       <Fiori>
-        <FioreLeft>
+        <div>
           <Image src={fiore} />
-        </FioreLeft>
+        </div>
         <FioreRight>
           <Image src={fiore} />
         </FioreRight>
