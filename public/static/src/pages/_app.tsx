@@ -28,12 +28,7 @@ body {
 }
 * {
     box-sizing: border-box;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .animate { animation: none !important; }
-}
-`
+}`
 
 const App = ({ Component, pageProps }: AppProps) => (
   <>

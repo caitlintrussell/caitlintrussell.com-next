@@ -9,11 +9,11 @@ const Document = () => (
         rel="stylesheet"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Eczar:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap"
         rel="stylesheet"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Eczar:wght@400&display=swap"
         rel="stylesheet"
       />
     </Head>

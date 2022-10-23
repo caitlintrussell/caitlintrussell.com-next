@@ -1,17 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442.55 201.28">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #46789e;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M441.35,61.59C414.07,25.11,370.54,1.5,321.48,1.5h-96.35s-2.4,0-2.4,0H126.38c-49.05,0-92.59,23.61-119.87,60.09"/>
-  <path class="cls-1" d="M427.55,62.41c-25.76-31.63-65.02-51.82-108.99-51.82h-92.73s-3.81,0-3.81,0h-92.73c-43.97,0-83.22,20.2-108.99,51.82"/>
-  <path class="cls-1" d="M436.04,139.69c-27.28,36.48-70.82,60.09-119.87,60.09h-96.35s-2.4,0-2.4,0H121.07c-49.05,0-92.59-23.61-119.87-60.09"/>
-  <path class="cls-1" d="M422.24,138.87c-25.76,31.63-65.02,51.82-108.99,51.82h-92.73s-3.81,0-3.81,0H123.99c-43.97,0-83.22-20.2-108.99-51.82"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 351.7 241.6" style="enable-background:new 0 0 351.7 241.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#46789C;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M175.9,14.5"/>
+<path class="st0" d="M7.7,36.5C27.3,16,55.2,1.5,80,1.5h95.9"/>
+<path class="st0" d="M1.2,43.8c2-2.5,4.2-4.9,6.5-7.3"/>
+<path class="st0" d="M350.6,43.8c-19.7-24.3-51.2-42.3-78.8-42.3h-95.9"/>
+<path class="st0" d="M175.9,227.1"/>
+<path class="st0" d="M350.6,197.8c-19.7,24.3-51.2,42.3-78.8,42.3h-95.9"/>
+<path class="st0" d="M1.2,197.8c19.7,24.3,51.2,42.3,78.8,42.3h95.9"/>
+<path class="st0" d="M175.9,14.5H80c-19.5,0-43.3,11.6-61,29l-3,3"/>
+<path class="st0" d="M335.8,46.5l-2.5-2.5c-17.7-17.7-41.8-29.5-61.5-29.5h-95.9"/>
+<path class="st0" d="M7.2,184.6l4.1,5c17.9,22.1,46.2,37.5,68.7,37.5h95.9"/>
+<path class="st0" d="M344.6,184.6l-4.1,5c-17.9,22.1-46.2,37.5-68.7,37.5h-95.9"/>
 </svg>
