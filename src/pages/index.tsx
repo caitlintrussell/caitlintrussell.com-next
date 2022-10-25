@@ -10,7 +10,6 @@ const Container = styled.div`
   justify-content: center;
 `
 
-
 const HomePage = () => (
   <Container>
     <Navigation />

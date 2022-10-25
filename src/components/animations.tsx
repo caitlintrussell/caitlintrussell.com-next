@@ -1,11 +1,14 @@
-import { keyframes } from "styled-components";
+import { keyframes } from 'styled-components'
 
 export const slideDown = keyframes`
 from {
   opacity: 0;
-  transform: translateY(-10vh);
+  transform: translateY(-5vh);
 }
-
+50% {
+  opacity: 0;
+  transform: translateY(-5vh);
+}
 to {
   opacity: 1;
   transform: none;

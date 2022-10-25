@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
 export const Subtitle = styled.h2`
-  color: #46789e;
+  color: #af5939;
   font-size: 1.25rem;
   letter-spacing: 0.25rem;
+  font-weight: normal;
 `
 
 export const Headline = styled.h1`
-  font-size: 4.5rem;
+  font-size: 6rem;
   letter-spacing: 0.25rem;
   font-family: Eczar;
   color: #46789e;
