@@ -1,9 +1,23 @@
 import Image from 'next/image'
 import { FC } from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Headline, Subtitle } from '../components/typography'
-import { appear } from './animations'
 import fiore from '/public/static/fiore.svg'
+
+export const appear = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+  to {
+    opacity: 1;
+    transform: none; 
+  }
+`
 
 const LogoArea = styled.div`
   animation: ${appear} 1s ease-in;
@@ -14,7 +28,6 @@ const Border = styled.div`
   flex-direction: column;
   min-height: 185px;
   border: 6px double #46789e;
-
   border-radius: 110px 110px 0 0;
   max-height: 180px;
 `
@@ -38,8 +51,6 @@ const Fiori = styled.div`
 
 const Name = styled.div`
   margin: 0 -105px;
-  flex: 1;
-  overflow: visible;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,8 +67,8 @@ const Name = styled.div`
 
 const Tagline = styled.div`
   & > h2 {
-    letter-spacing: 0.9rem;
-    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    font-size: 0.8rem;
     text-align: center;
     margin: 0.25rem 0 0;
   }
@@ -80,7 +91,7 @@ const Logo: FC = () => (
       </Fiori>
     </Border>
     <Tagline>
-      <Subtitle>frontend software engineer</Subtitle>
+      <Subtitle>makin' software since 2017™</Subtitle>
     </Tagline>
   </LogoArea>
 )

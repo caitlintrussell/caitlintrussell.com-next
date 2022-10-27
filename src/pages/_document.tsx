@@ -12,6 +12,10 @@ const Document = () => (
         href="https://fonts.googleapis.com/css2?family=Eczar:wght@400&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="http://fonts.cdnfonts.com/css/centrio-typeface-outline"
+        rel="stylesheet"
+      />
     </Head>
     <body>
       <Main />

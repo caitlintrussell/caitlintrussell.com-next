@@ -8,10 +8,10 @@ export const Subtitle = styled.h2`
 `
 
 export const Headline = styled.h1`
-  font-size: 6rem;
-  letter-spacing: 0.25rem;
+  font-size: 6.5rem;
   font-family: Eczar;
   color: #46789e;
-  line-height: 0.75;
+  line-height: 0.7;
   font-weight: normal;
+  -webkit-text-stroke: 1px #46789e;
 `
