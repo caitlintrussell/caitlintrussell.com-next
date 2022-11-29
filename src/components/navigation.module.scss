@@ -1,0 +1,49 @@
+@keyframes grow {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  padding: 4vmin 2vmin;
+  animation: grow 1500ms ease-out;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  transition: color 500ms ease-out, border-bottom-color 500ms ease-out;
+  color: var(--secondary);
+  border-bottom: 2px solid transparent;
+  margin: 0 1rem;
+  padding: 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+  }
+}
+.active {
+  font-style: italic;
+  border-bottom-color: var(--secondary);
+}

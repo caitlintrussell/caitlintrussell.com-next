@@ -1,21 +1,13 @@
-import styled from 'styled-components'
 import Logo from '../components/logo'
-import Navigation from '../components/navigation'
+import About from './about'
+import Work from './work'
 
-const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`
-
-const HomePage = () => (
-  <Container>
-    <Navigation />
+const Main = () => (
+  <main>
     <Logo />
-    <Navigation />
-  </Container>
+    <About />
+    <Work />
+  </main>
 )
 
-export default HomePage
+export default Main

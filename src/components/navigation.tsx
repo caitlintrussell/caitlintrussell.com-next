@@ -1,77 +1,43 @@
 import Link from 'next/link'
+import { NextRouter, useRouter } from 'next/router'
 import { FC } from 'react'
-import styled, { keyframes } from 'styled-components'
+import styles from './navigation.module.scss'
+import CDT from './svg/cdt'
 
-export const grow = keyframes`
-from {
-  opacity: 0;
-  max-height: 0;
+// add event listener for scroll up (lower height) and scroll down (increase height to start)
+
+interface IProps {
+  reducePadding: boolean
 }
-50% {
-  opacity: 0;
-  max-height: 0;
-}
-to {
-  opacity: 1;
-  max-height: 400px;
-}
-`
-const Bar = styled.div`
-  left: 0;
-  top: 0;
-  width: 50px;
-  display: flex;
-  align-items: center;
 
-  flex-direction: column;
-  height: 100%;
-`
-const NavArea = styled.nav`
-  writing-mode: vertical-rl;
-  animation: ${grow} 1500ms ease-in;
-  & > a {
-    transition: color 400ms ease-in-out, text-decoration-color 400ms ease-in-out;
-    text-transform: uppercase;
-    color: #af5939;
-    letter-spacing: 0.15rem;
-    text-decoration: underline overline rgba(0, 0, 0, 0) solid 2px;
-    text-underline-offset: 0.25rem;
-    text-overline-offset: 0.25rem;
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
+const Navigation: FC<IProps> = ({ reducePadding }) => {
+  const router: NextRouter = useRouter()
 
-    &:first-of-type {
-      padding-top: 1rem;
-    }
-    &:last-of-type {
-      padding-bottom: 1rem;
-    }
-
-    &:hover {
-      color: #46789e;
-      text-decoration-color: #46789e;
-    }
+  const calcLinkClassname = (linkName: string) => {
+    const { pathname } = router
+    return `${styles.link} ${pathname.includes(linkName) ? styles.active : ''}`
   }
-`
-
-const FlexLine = styled.div`
-  flex: 1;
-  border-left: 6px double #af5939;
-  width: 6px;
-  height: 700px;
-`
-
-const Navigation: FC = () => (
-  <Bar>
-    <FlexLine />
-    <NavArea>
-      <Link href="/about">About</Link>
-      <Link href="/toolkit">Toolkit</Link>
-      <Link href="/projects">Projects</Link>
-      <Link href="/contact">Contact</Link>
-    </NavArea>
-    <FlexLine />
-  </Bar>
-)
-
+  return (
+    <header className={`${styles.header} ${true ? styles.lessPadding : ''}`}>
+      <nav className={styles.navBar}>
+        <Link aria-label="Home" href="/" passHref legacyBehavior>
+          <a>
+            <CDT stroke="var(--primary)" fill="var(--primary)" />
+          </a>
+        </Link>
+        <div>
+          <Link href="/about" legacyBehavior>
+            <a className={calcLinkClassname('about')}>about</a>
+          </Link>
+          <Link href="/work" legacyBehavior>
+            <a className={calcLinkClassname('work')}>work</a>
+          </Link>
+          <Link href="/contact" legacyBehavior>
+            <a className={calcLinkClassname('contact')}>contact</a>
+          </Link>
+        </div>
+      </nav>
+    </header>
+  )
+}
 export default Navigation

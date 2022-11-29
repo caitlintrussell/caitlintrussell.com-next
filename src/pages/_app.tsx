@@ -1,43 +1,15 @@
 import type { AppProps } from 'next/app'
-import { createGlobalStyle } from 'styled-components'
+import Navigation from '../components/navigation'
 
-const GlobalStyle = createGlobalStyle`
-html,
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #e9dbb9; // #e9dbb9
-    font-family: 'Montserrat', sans-serif;
+import '../global.scss'
 
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    img {
-      user-select: none;
-      pointer-events: none;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      letter-spacing: .25rem;
-      
-    }
-}
-* {
-    box-sizing: border-box;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .animate { animation: none !important; }
-}
-`
+// intersection observer for long scroller -- pushState onto router when container for page comes into view ??
+// but examine
 
 const App = ({ Component, pageProps }: AppProps) => (
-  <>
-    <GlobalStyle />
+  <div className="full-width">
+    <Navigation reducePadding={true} />
     <Component {...pageProps} />
-  </>
+  </div>
 )
 export default App
