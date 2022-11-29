@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { FC } from 'react'
 import Fiore from '../components/svg/fiore'
 import style from './about.module.scss'
-import Caitlin from '/public/static/c-croptest.jpg'
+import Caitlin from '/public/static/c-crop.jpg'
 
 const About: FC = () => (
   <section className={style.container}>
