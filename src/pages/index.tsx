@@ -1,3 +1,13 @@
-const HomePage = () => <div>Welcome to Next.js!</div>
+import Logo from '../components/logo'
+import About from './about'
+import Work from './work'
 
-export default HomePage
+const Main = () => (
+  <main>
+    <Logo />
+    <About />
+    <Work />
+  </main>
+)
+
+export default Main

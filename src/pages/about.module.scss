@@ -1,0 +1,83 @@
+.column-on-tablet {
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.container {
+  background-color: var(--primary);
+  background-image: var(--bg-image);
+  background-blend-mode: soft-light;
+  color: var(--bg);
+}
+
+.introduction {
+  @extend .column-on-tablet;
+  padding-top: 20vmin;
+  display: flex;
+  justify-content: flex-end;
+
+  & img {
+    filter: grayscale(100);
+    border-radius: 50% 50% 0 0;
+  }
+}
+
+.flowerOverlay {
+  position: relative;
+  margin: 0 5vmin 5vmin;
+  align-self: center;
+
+  svg {
+    position: absolute;
+    width: 110px;
+    bottom: -30px;
+    left: -20px;
+  }
+}
+
+.description {
+  flex: 1;
+  margin: 0 4vmin;
+  max-width: 900px;
+
+  h1 {
+    margin: 0;
+    color: var(--bg);
+    font-size: 2.5rem;
+    letter-spacing: 0.07em;
+    font-weight: 500;
+  }
+}
+
+.tldr {
+  @extend .column-on-tablet;
+  background-image: var(--bg-image);
+  background-blend-mode: soft-light;
+  padding: 60px 0;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+
+  & > ul {
+    color: var(--bg);
+    font-size: 0.9rem;
+    margin: 0 20px;
+
+    & > li {
+      line-height: 2em;
+      display: list-item;
+    }
+  }
+
+  .nested {
+    margin: 0;
+    display: inline-flex;
+    align-items: baseline;
+    & li {
+      padding-left: 10px;
+      line-height: 1em;
+      display: list-item;
+    }
+  }
+}
